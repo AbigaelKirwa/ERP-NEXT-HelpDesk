@@ -1,0 +1,60 @@
+    sock = self._connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 407, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 388, in get_redis_conn
+    _redis_queue_conn = RedisQueue.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/redis_queue.py", line 39, in get_connection
+    conn.ping()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1378, in ping
+    return self.execute_command('PING')
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 200, in start_worker
+    start_worker(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 250, in start_worker
+    redis_connection = get_redis_conn(username=rq_username, password=rq_password)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 324, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 404, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/tenacity/__init__.py", line 361, in iter
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7a541f0c96f0 state=finished raised ConnectionError>]

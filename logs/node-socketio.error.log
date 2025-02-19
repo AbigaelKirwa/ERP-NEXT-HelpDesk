@@ -1,0 +1,4190 @@
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+events.js:291
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Redis connection to 127.0.0.1:13000 failed - connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1138:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (events.js:314:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:13000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on RedisClient instance at:
+    at RedisClient.on_error (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:342:14)
+    at Socket.<anonymous> (/home/abigael/frappe-bench/apps/frappe/node_modules/redis/index.js:223:14)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '127.0.0.1',
+  port: 13000
+}
+
+Node.js v18.20.5

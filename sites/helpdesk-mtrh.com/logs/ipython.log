@@ -1,0 +1,11 @@
+2025-02-18 11:37:32,570 INFO ipython === bench console session ===
+2025-02-18 11:37:32,599 INFO ipython import frappe
+frappe.delete_doc("DocType", "Medical Department", force=True)
+frappe.db.commit()
+2025-02-18 11:37:32,599 INFO ipython exit;
+2025-02-18 11:37:32,599 INFO ipython === session end ===
+2025-02-18 13:35:00,640 INFO ipython === bench console session ===
+2025-02-18 13:35:00,640 INFO ipython import frappe
+frappe.get_all("DocType", filters={"name": "Issue Category"})
+2025-02-18 13:35:00,641 INFO ipython exit;
+2025-02-18 13:35:00,641 INFO ipython === session end ===

@@ -1,0 +1,15 @@
+_HiStOrY_V2_
+SELECT\040*\040FROM\040`tabModule\040Def`\040WHERE\040name\040=\040'Help\040Desk';
+exit;
+bench\040--site\040helpdesk-mtrh.com\040mariadb
+;
+clear
+DELETE\040FROM\040`tabModule\040Def`\040WHERE\040name\040=\040"Help\040Desk";
+exit;
+SELECT\040*\040FROM\040`tabInstalledApps`;
+SELECT\040*\040FROM\040`tabModule`
+;
+SELECT\040*\040FROM\040`tabModule\040Def`
+;
+INSERT\040INTO\040`tabModule\040Def`\040(\040\040\040\040`name`,\040`creation`,\040`modified`,\040`modified_by`,\040`owner`,\040\040\040\040\040`docstatus`,\040`idx`,\040`module_name`)\040VALUES\040(\040\040\040\040'Help\040Desk',\040\040\040\040\040NOW(),\040\040\040\040\040NOW(),\040\040\040\040\040'Administrator',\040\040\040\040\040'Administrator',\040\040\040\040\0400,\040\040\040\040\0400,\040\040\040\040\040'Help\040Desk');
+SELECT\040*\040FROM\040`tabModule\040Def`\040WHERE\040name\040=\040'Help\040Desk';

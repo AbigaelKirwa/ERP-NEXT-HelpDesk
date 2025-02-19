@@ -1,0 +1,7 @@
+{
+ "db_name":"firstErpDb",
+ "db_password":"4921",
+ "db_host":"172.16.0.68",
+ "db_port":3306,
+ "db_user":"root"
+}

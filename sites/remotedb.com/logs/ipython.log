@@ -1,0 +1,40 @@
+2025-01-30 12:35:02,606 INFO ipython === bench console session ===
+2025-01-30 12:35:02,606 INFO ipython import frappe
+2025-01-30 12:35:02,606 INFO ipython user = "jane@example.com"
+2025-01-30 12:35:02,606 INFO ipython role = frappe.get_doc("Role", "Library Member")
+2025-01-30 12:35:02,606 INFO ipython frappe.permissions.add_permission("Library Settings", role, "read")
+2025-01-30 12:35:02,606 INFO ipython frappe.permissions.add_permission("Library Settings", role, "read")
+2025-01-30 12:35:02,606 INFO ipython import frappe
+
+user = "jane@example.com"
+role = frappe.get_doc("Role", "Library Member")
+
+# Manually set read access for Library Settings
+frappe.permissions.add_permission("Library Settings", role, "read")
+frappe.db.commit()
+2025-01-30 12:35:02,607 INFO ipython exit;
+2025-01-30 12:35:02,607 INFO ipython === session end ===
+2025-01-30 12:55:36,552 INFO ipython === bench console session ===
+2025-01-30 12:55:36,552 INFO ipython import frappe
+
+# Define the doctype and role
+doctype = "Library Settings"
+role_name = "Library Member"
+
+# Add read permission
+frappe.permissions.add_permission(doctype, role_name, permlevel=0, ptype="read")
+2025-01-30 12:55:36,552 INFO ipython import frappe
+
+doctype = "Library Settings"
+role_name = "Library Member"
+
+# Add read permission
+frappe.model.permissions.add_permission(doctype, role_name, permlevel=0)
+2025-01-30 12:55:36,553 INFO ipython exit;
+2025-01-30 12:55:36,553 INFO ipython === session end ===
+2025-01-31 06:58:32,039 INFO ipython === bench console session ===
+2025-01-31 06:58:32,039 INFO ipython import frappe
+2025-01-31 06:58:32,039 INFO ipython frappe.get_list("Doctype", filters={"name":"Article})
+2025-01-31 06:58:32,039 INFO ipython frappe.get_list("Doctype", filters={"name":"Article"})
+2025-01-31 06:58:32,039 INFO ipython exit;
+2025-01-31 06:58:32,039 INFO ipython === session end ===
