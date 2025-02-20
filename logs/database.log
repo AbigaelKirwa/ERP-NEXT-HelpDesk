@@ -2042,3 +2042,13 @@ create table `tabHelp Desk Issue` (
 			COLLATE=utf8mb4_unicode_ci
 2025-02-18 14:20:59,707 WARNING database DDL Query made to DB:
 ALTER TABLE `tabIssue Subcategory` ADD UNIQUE INDEX IF NOT EXISTS issue_subcategory_name (`issue_subcategory_name`)
+2025-02-20 06:57:21,864 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHelp Desk Issue` ADD COLUMN `assigned_by` varchar(140)
+2025-02-20 07:27:53,501 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHelp Desk Issue` ADD COLUMN `date_assigned` datetime(6)
+2025-02-20 07:27:53,649 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHelp Desk Issue` MODIFY `date_closed` datetime(6), MODIFY `date_raised` datetime(6), MODIFY `date_resolved` datetime(6)
+2025-02-20 08:08:41,925 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHelp Desk Issue` ADD COLUMN `workflow_state` varchar(140)
+2025-02-20 12:49:58,201 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHelp Desk Issue` ADD UNIQUE INDEX IF NOT EXISTS title (`title`)

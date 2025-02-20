@@ -1,28 +1,10 @@
-2025-02-18 08:04:46,325 ERROR frappe Failed to run after request hook
+2025-02-20 12:39:35,369 ERROR frappe Failed to run after request hook
 Site: helpdesk-mtrh.com
 Form Dict: {}
 Traceback (most recent call last):
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
     return frappe.local.request_cache[func][args_key]
 KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
-    app_hooks = get_module(f"{app}.hooks")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'help_desk'
 
 During handling of the above exception, another exception occurred:
 
@@ -61,9 +43,21 @@ Traceback (most recent call last):
     hooks = _dict(_load_app_hooks())
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
     return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1487, in _load_app_hooks
-    print(f'Could not find app "{app}": \n{e}')
-BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
 
 During handling of the above exception, another exception occurred:
 
@@ -75,6 +69,16 @@ KeyError: 5740354900026072187
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 108, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
     app_hooks = get_module(f"{app}.hooks")
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
@@ -83,50 +87,46 @@ Traceback (most recent call last):
     return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'help_desk'
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
   File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
     response = handle_exception(e)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
-    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
-    local.system_settings = get_cached_doc("System Settings")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 69, in _get_controller
-    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 370, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/utils.py", line 517, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 117, in get_website_settings
+    hooks = frappe.get_hooks()
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
     hooks = _dict(_load_app_hooks())
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
     return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1487, in _load_app_hooks
-    print(f'Could not find app "{app}": \n{e}')
-BrokenPipeError: [Errno 32] Broken pipe
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
     app_hooks = get_module(f"{app}.hooks")
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
@@ -135,12 +135,20 @@ Traceback (most recent call last):
     return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'help_desk'
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
 
 During handling of the above exception, another exception occurred:
 
@@ -153,20 +161,6 @@ Traceback (most recent call last):
     hooks = _dict(_load_app_hooks())
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
     return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1487, in _load_app_hooks
-    print(f'Could not find app "{app}": \n{e}')
-BrokenPipeError: [Errno 32] Broken pipe
-2025-02-18 08:04:47,526 ERROR frappe Failed to run after request hook
-Site: helpdesk-mtrh.com
-Form Dict: {}
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
     app_hooks = get_module(f"{app}.hooks")
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
@@ -175,12 +169,23 @@ Traceback (most recent call last):
     return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'help_desk'
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+2025-02-20 12:40:23,694 ERROR frappe New Exception collected with id: 2025-02-20 12:40:23.519507-10.30.166.51-e96
+Site: helpdesk-mtrh.com
+Form Dict: {}
+2025-02-20 12:40:23,697 ERROR frappe Failed to run after request hook
+Site: helpdesk-mtrh.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
 
 During handling of the above exception, another exception occurred:
 
@@ -219,9 +224,21 @@ Traceback (most recent call last):
     hooks = _dict(_load_app_hooks())
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
     return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1487, in _load_app_hooks
-    print(f'Could not find app "{app}": \n{e}')
-BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
 
 During handling of the above exception, another exception occurred:
 
@@ -233,6 +250,16 @@ KeyError: 5740354900026072187
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 108, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
     app_hooks = get_module(f"{app}.hooks")
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
@@ -241,50 +268,46 @@ Traceback (most recent call last):
     return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'help_desk'
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
   File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
     response = handle_exception(e)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
-    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
-    local.system_settings = get_cached_doc("System Settings")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 69, in _get_controller
-    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 370, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/utils.py", line 517, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 117, in get_website_settings
+    hooks = frappe.get_hooks()
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
     hooks = _dict(_load_app_hooks())
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
     return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1487, in _load_app_hooks
-    print(f'Could not find app "{app}": \n{e}')
-BrokenPipeError: [Errno 32] Broken pipe
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
     app_hooks = get_module(f"{app}.hooks")
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
@@ -293,12 +316,20 @@ Traceback (most recent call last):
     return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'help_desk'
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
 
 During handling of the above exception, another exception occurred:
 
@@ -311,20 +342,6 @@ Traceback (most recent call last):
     hooks = _dict(_load_app_hooks())
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
     return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1487, in _load_app_hooks
-    print(f'Could not find app "{app}": \n{e}')
-BrokenPipeError: [Errno 32] Broken pipe
-2025-02-18 08:05:01,827 ERROR frappe Failed to run after request hook
-Site: helpdesk-mtrh.com
-Form Dict: {}
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
     app_hooks = get_module(f"{app}.hooks")
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
@@ -333,12 +350,23 @@ Traceback (most recent call last):
     return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'help_desk'
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+2025-02-20 12:40:25,005 ERROR frappe New Exception collected with id: 2025-02-20 12:40:24.984938-10.30.166.51-2aa
+Site: helpdesk-mtrh.com
+Form Dict: {}
+2025-02-20 12:40:25,007 ERROR frappe Failed to run after request hook
+Site: helpdesk-mtrh.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
 
 During handling of the above exception, another exception occurred:
 
@@ -377,9 +405,21 @@ Traceback (most recent call last):
     hooks = _dict(_load_app_hooks())
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
     return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1487, in _load_app_hooks
-    print(f'Could not find app "{app}": \n{e}')
-BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
 
 During handling of the above exception, another exception occurred:
 
@@ -391,6 +431,16 @@ KeyError: 5740354900026072187
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 108, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
     app_hooks = get_module(f"{app}.hooks")
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
@@ -399,22 +449,129 @@ Traceback (most recent call last):
     return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'help_desk'
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
   File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
     response = handle_exception(e)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
-    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
-    local.system_settings = get_cached_doc("System Settings")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 370, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/utils.py", line 517, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 117, in get_website_settings
+    hooks = frappe.get_hooks()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
+    run_after_request_hooks(request, response)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+2025-02-20 12:40:44,419 ERROR frappe New Exception collected with id: 2025-02-20 12:40:44.225518-10.30.166.51-58f
+Site: helpdesk-mtrh.com
+Form Dict: {}
+2025-02-20 12:40:44,423 ERROR frappe Failed to run after request hook
+Site: helpdesk-mtrh.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
+    init_request(request)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
+    self.set_session()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
+    self.make_session(resume=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
+    self.resume()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
+    self.validate_user()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
+    if not frappe.get_cached_value("User", self.user, "enabled"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
+    doc = get_cached_doc(doctype, name)
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
     doc = get_doc(*args, **kwargs)
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
@@ -429,9 +586,21 @@ Traceback (most recent call last):
     hooks = _dict(_load_app_hooks())
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
     return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1487, in _load_app_hooks
-    print(f'Could not find app "{app}": \n{e}')
-BrokenPipeError: [Errno 32] Broken pipe
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":permissions.allow_file_upload
+NameError: name 'permissions' is not defined
 
 During handling of the above exception, another exception occurred:
 
@@ -443,6 +612,16 @@ KeyError: 5740354900026072187
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 108, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
     app_hooks = get_module(f"{app}.hooks")
   File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
@@ -451,12 +630,68 @@ Traceback (most recent call last):
     return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":permissions.allow_file_upload
+NameError: name 'permissions' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
+    response = handle_exception(e)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 370, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/utils.py", line 517, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 117, in get_website_settings
+    hooks = frappe.get_hooks()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
-ModuleNotFoundError: No module named 'help_desk'
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":permissions.allow_file_upload
+NameError: name 'permissions' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
 
 During handling of the above exception, another exception occurred:
 
@@ -469,33 +704,742 @@ Traceback (most recent call last):
     hooks = _dict(_load_app_hooks())
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
     return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1487, in _load_app_hooks
-    print(f'Could not find app "{app}": \n{e}')
-BrokenPipeError: [Errno 32] Broken pipe
-2025-02-18 12:28:46,358 ERROR frappe New Exception collected with id: 2025-02-18 12:28:46.234970-10.30.166.51-af5
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":permissions.allow_file_upload
+NameError: name 'permissions' is not defined
+2025-02-20 12:40:45,759 ERROR frappe New Exception collected with id: 2025-02-20 12:40:45.740066-10.30.166.51-872
 Site: helpdesk-mtrh.com
-Form Dict: {'doctype': 'Medical Department', 'fields': '["`tabMedical Department`.`name`","`tabMedical Department`.`owner`","`tabMedical Department`.`creation`","`tabMedical Department`.`modified`","`tabMedical Department`.`modified_by`","`tabMedical Department`.`_user_tags`","`tabMedical Department`.`_comments`","`tabMedical Department`.`_assign`","`tabMedical Department`.`_liked_by`","`tabMedical Department`.`docstatus`","`tabMedical Department`.`idx`"]', 'filters': '[]', 'order_by': '`tabMedical Department`.`modified` desc', 'start': '0', 'page_length': '20', 'view': 'List', 'group_by': '', 'with_comment_count': 'true', 'cmd': 'frappe.desk.reportview.get'}
-2025-02-18 12:29:36,508 ERROR frappe New Exception collected with id: 2025-02-18 12:29:36.500710-10.30.166.51-4fa
+Form Dict: {}
+2025-02-20 12:40:45,762 ERROR frappe Failed to run after request hook
 Site: helpdesk-mtrh.com
-Form Dict: {'doc': '{"docstatus":0,"doctype":"DocType","name":"new-doctype-bhpmyjngxv","__islocal":1,"__unsaved":1,"owner":"Administrator","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":1,"quick_entry":0,"track_changes":0,"track_seen":0,"track_views":0,"custom":0,"beta":0,"is_virtual":0,"naming_rule":"","name_case":"","allow_rename":1,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"modified","sort_order":"DESC","force_re_route_to_default_view":0,"document_type":"","show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"read_only":0,"in_create":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","module":"Help Desk","permissions":[{"docstatus":0,"doctype":"DocPerm","name":"new-docperm-oljagmmgev","__islocal":1,"__unsaved":1,"owner":"Administrator","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":0,"set_user_permissions":0,"share":1,"print":1,"email":1,"parent":"new-doctype-bhpmyjngxv","parentfield":"permissions","parenttype":"DocType","idx":1,"role":"System Manager"}],"default_view":"List","__newname":"Medical Department","fields":[{"docstatus":0,"doctype":"DocField","name":"new-docfield-lrlehdlrbj","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"new-doctype-bhpmyjngxv","parentfield":"fields","parenttype":"DocType","idx":1,"__unedited":false,"label":"Medical Department Name"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2025-02-18 12:31:12,415 ERROR frappe New Exception collected with id: 2025-02-18 12:31:12.411570-10.30.166.51-6bb
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
+    init_request(request)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
+    self.set_session()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
+    self.make_session(resume=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
+    self.resume()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
+    self.validate_user()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
+    if not frappe.get_cached_value("User", self.user, "enabled"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
+    doc = get_cached_doc(doctype, name)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
+    return _get_controller()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 69, in _get_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":permissions.allow_file_upload
+NameError: name 'permissions' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 108, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":permissions.allow_file_upload
+NameError: name 'permissions' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
+    response = handle_exception(e)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 370, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/utils.py", line 517, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 117, in get_website_settings
+    hooks = frappe.get_hooks()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":permissions.allow_file_upload
+NameError: name 'permissions' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
+    run_after_request_hooks(request, response)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":permissions.allow_file_upload
+NameError: name 'permissions' is not defined
+2025-02-20 12:40:50,097 ERROR frappe New Exception collected with id: 2025-02-20 12:40:49.913028-10.30.166.51-0a4
 Site: helpdesk-mtrh.com
-Form Dict: {'doctype': 'Medical Department', 'fields': '["`tabMedical Department`.`name`","`tabMedical Department`.`owner`","`tabMedical Department`.`creation`","`tabMedical Department`.`modified`","`tabMedical Department`.`modified_by`","`tabMedical Department`.`_user_tags`","`tabMedical Department`.`_comments`","`tabMedical Department`.`_assign`","`tabMedical Department`.`_liked_by`","`tabMedical Department`.`docstatus`","`tabMedical Department`.`idx`"]', 'filters': '[]', 'order_by': '`tabMedical Department`.`modified` desc', 'start': '0', 'page_length': '20', 'view': 'List', 'group_by': '', 'with_comment_count': 'true', 'cmd': 'frappe.desk.reportview.get'}
-2025-02-18 12:33:20,223 ERROR frappe New Exception collected with id: 2025-02-18 12:33:20.217386-10.30.166.51-74a
+Form Dict: {}
+2025-02-20 12:40:50,101 ERROR frappe Failed to run after request hook
 Site: helpdesk-mtrh.com
-Form Dict: {'doc': '{"docstatus":0,"doctype":"DocType","name":"new-doctype-mieppodsra","__islocal":1,"__unsaved":1,"owner":"Administrator","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":1,"quick_entry":0,"track_changes":0,"track_seen":0,"track_views":0,"custom":1,"beta":0,"is_virtual":0,"naming_rule":"","name_case":"","allow_rename":1,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"modified","sort_order":"DESC","force_re_route_to_default_view":0,"document_type":"","show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"read_only":0,"in_create":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","module":"Help Desk","permissions":[{"docstatus":0,"doctype":"DocPerm","name":"new-docperm-txvhbqbkmk","__islocal":1,"__unsaved":1,"owner":"Administrator","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":0,"set_user_permissions":0,"share":1,"print":1,"email":1,"parent":"new-doctype-mieppodsra","parentfield":"permissions","parenttype":"DocType","idx":1,"role":"System Manager"}],"default_view":"List","__newname":"Medical Department","fields":[{"docstatus":0,"doctype":"DocField","name":"new-docfield-eqdzutxmgn","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"new-doctype-mieppodsra","parentfield":"fields","parenttype":"DocType","idx":1,"__unedited":false,"label":"Medical Department Name"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2025-02-18 12:47:39,385 ERROR frappe New Exception collected with id: 2025-02-18 12:47:39.232899-10.30.166.51-8cc
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
+    init_request(request)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
+    self.set_session()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
+    self.make_session(resume=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
+    self.resume()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
+    self.validate_user()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
+    if not frappe.get_cached_value("User", self.user, "enabled"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
+    doc = get_cached_doc(doctype, name)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
+    return _get_controller()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 69, in _get_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 108, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
+    response = handle_exception(e)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 370, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/utils.py", line 517, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 117, in get_website_settings
+    hooks = frappe.get_hooks()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
+    run_after_request_hooks(request, response)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+2025-02-20 12:45:43,602 ERROR frappe New Exception collected with id: 2025-02-20 12:45:43.583090-10.30.166.51-cbf
 Site: helpdesk-mtrh.com
-Form Dict: {'doc': '{"name":"Medical Department","creation":"2025-02-18 15:33:20.174758","modified":"2025-02-18 15:33:20.174758","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":1,"track_changes":0,"module":"Help Desk","naming_rule":"By fieldname","name_case":"","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"document_type":"","engine":"InnoDB","is_submittable":0,"show_name_in_global_search":0,"custom":1,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"track_views":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"default_view":"List","force_re_route_to_default_view":0,"show_preview_popup":0,"index_web_pages_for_search":1,"doctype":"DocType","permissions":[{"name":"pr51qssoqe","creation":"2025-02-18 15:33:20.174758","modified":"2025-02-18 15:33:20.174758","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Medical Department","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"set_user_permissions":0,"doctype":"DocPerm"}],"links":[],"states":[],"actions":[],"fields":[{"name":"pr512gj6p2","creation":"2025-02-18 15:33:20.174758","modified":"2025-02-18 15:33:20.174758","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"Medical Department","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"medical_department_name","label":"Medical Department Name","fieldtype":"Data","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"make_attachment_public":0,"doctype":"DocField"}],"__last_sync_on":"2025-02-18T12:47:17.682Z","__unsaved":1,"autoname":"field:medical_department_name"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2025-02-18 12:47:56,036 ERROR frappe New Exception collected with id: 2025-02-18 12:47:56.033392-10.30.166.51-c58
+Form Dict: {}
+2025-02-20 12:45:43,605 ERROR frappe Failed to run after request hook
 Site: helpdesk-mtrh.com
-Form Dict: {'doctype': 'Medical Department', 'fields': '["`tabMedical Department`.`name`","`tabMedical Department`.`owner`","`tabMedical Department`.`creation`","`tabMedical Department`.`modified`","`tabMedical Department`.`modified_by`","`tabMedical Department`.`_user_tags`","`tabMedical Department`.`_comments`","`tabMedical Department`.`_assign`","`tabMedical Department`.`_liked_by`","`tabMedical Department`.`docstatus`","`tabMedical Department`.`idx`"]', 'filters': '[]', 'order_by': '`tabMedical Department`.`modified` desc', 'start': '0', 'page_length': '20', 'view': 'List', 'group_by': '', 'with_comment_count': 'true', 'cmd': 'frappe.desk.reportview.get'}
-2025-02-18 13:07:32,372 ERROR frappe New Exception collected with id: 2025-02-18 13:07:32.364928-10.30.166.51-457
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
+    init_request(request)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
+    self.set_session()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
+    self.make_session(resume=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
+    self.resume()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
+    self.validate_user()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
+    if not frappe.get_cached_value("User", self.user, "enabled"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
+    doc = get_cached_doc(doctype, name)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
+    return _get_controller()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 69, in _get_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 108, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
+    response = handle_exception(e)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 370, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/utils.py", line 517, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 117, in get_website_settings
+    hooks = frappe.get_hooks()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
+    run_after_request_hooks(request, response)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+2025-02-20 12:46:16,566 ERROR frappe New Exception collected with id: 2025-02-20 12:46:16.546483-10.30.166.51-8ff
 Site: helpdesk-mtrh.com
-Form Dict: {'doc': '{"docstatus":0,"doctype":"DocType","name":"new-doctype-xfrjaxrzit","__islocal":1,"__unsaved":1,"owner":"Administrator","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":1,"quick_entry":0,"track_changes":0,"track_seen":0,"track_views":0,"custom":1,"beta":0,"is_virtual":0,"naming_rule":"By fieldname","name_case":"","allow_rename":1,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"modified","sort_order":"DESC","force_re_route_to_default_view":0,"document_type":"","show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"read_only":0,"in_create":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","module":"Help Desk","permissions":[{"docstatus":0,"doctype":"DocPerm","name":"new-docperm-znneeizsfb","__islocal":1,"__unsaved":1,"owner":"Administrator","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":0,"set_user_permissions":0,"share":1,"print":1,"email":1,"parent":"new-doctype-xfrjaxrzit","parentfield":"permissions","parenttype":"DocType","idx":1,"role":"System Manager"}],"default_view":"List","__newname":"Issue Category","fields":[{"docstatus":0,"doctype":"DocField","name":"new-docfield-kcgtjrnynx","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":1,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"new-doctype-xfrjaxrzit","parentfield":"fields","parenttype":"DocType","idx":1,"__unedited":false,"label":"Issue Category Name","fieldname":"issue_category_name"},{"docstatus":0,"doctype":"DocField","name":"new-docfield-smwnvheahr","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Long Text","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":1,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"new-doctype-xfrjaxrzit","parentfield":"fields","parenttype":"DocType","idx":2,"__unedited":false,"label":"Description","fieldname":"description"}],"autoname":"field:issue_category_name"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2025-02-18 13:07:52,449 ERROR frappe New Exception collected with id: 2025-02-18 13:07:52.446155-10.30.166.51-c8b
+Form Dict: {}
+2025-02-20 12:46:16,569 ERROR frappe Failed to run after request hook
 Site: helpdesk-mtrh.com
-Form Dict: {'doctype': 'Issue Category', 'fields': '["`tabIssue Category`.`name`","`tabIssue Category`.`owner`","`tabIssue Category`.`creation`","`tabIssue Category`.`modified`","`tabIssue Category`.`modified_by`","`tabIssue Category`.`_user_tags`","`tabIssue Category`.`_comments`","`tabIssue Category`.`_assign`","`tabIssue Category`.`_liked_by`","`tabIssue Category`.`docstatus`","`tabIssue Category`.`idx`","`tabIssue Category`.`issue_category_name`","`tabIssue Category`.`description`"]', 'filters': '[]', 'order_by': '`tabIssue Category`.`modified` desc', 'start': '0', 'page_length': '20', 'view': 'List', 'group_by': '', 'with_comment_count': 'true', 'cmd': 'frappe.desk.reportview.get'}
-2025-02-18 13:18:34,119 ERROR frappe New Exception collected with id: 2025-02-18 13:18:34.016980-10.30.166.51-e3c
-Site: helpdesk-mtrh.com
-Form Dict: {'doc': '{"docstatus":0,"doctype":"DocType","name":"new-doctype-xasswoofxf","__islocal":1,"__unsaved":1,"owner":"Administrator","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":1,"quick_entry":0,"track_changes":0,"track_seen":0,"track_views":0,"custom":1,"beta":0,"is_virtual":0,"naming_rule":"","name_case":"","allow_rename":1,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"modified","sort_order":"DESC","force_re_route_to_default_view":0,"document_type":"","show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"read_only":0,"in_create":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","module":"Help Desk","permissions":[{"docstatus":0,"doctype":"DocPerm","name":"new-docperm-oidtppjzkf","__islocal":1,"__unsaved":1,"owner":"Administrator","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"report":1,"export":1,"import":0,"set_user_permissions":0,"share":1,"print":1,"email":1,"parent":"new-doctype-xasswoofxf","parentfield":"permissions","parenttype":"DocType","idx":1,"role":"System Manager"}],"default_view":"List","__newname":"Issue Category","fields":[{"docstatus":0,"doctype":"DocField","name":"new-docfield-gjmgpzzvma","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"new-doctype-xasswoofxf","parentfield":"fields","parenttype":"DocType","idx":1,"__unedited":false,"label":"Issue Category Name"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
+    init_request(request)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
+    self.set_session()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
+    self.make_session(resume=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
+    self.resume()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
+    self.validate_user()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
+    if not frappe.get_cached_value("User", self.user, "enabled"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
+    doc = get_cached_doc(doctype, name)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
+    return _get_controller()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 69, in _get_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 17, in get_response
+    endpoint, renderer_instance = path_resolver.resolve()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 36, in resolve
+    resolve_redirect(self.path, request.query_string)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/path_resolver.py", line 108, in resolve_redirect
+    redirects = frappe.get_hooks("website_redirects")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
+    response = handle_exception(e)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 370, in handle_exception
+    response = get_response("message", http_status_code=http_status_code)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/serve.py", line 26, in get_response
+    response = ErrorPage(exception=e).render()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 84, in render
+    html = self.get_html()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/utils.py", line 517, in cache_html_decorator
+    html = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/template_page.py", line 92, in get_html
+    self.init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/error_page.py", line 14, in init_context
+    super().init_context()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/page_renderers/base_template_page.py", line 15, in init_context
+    self.context.update(get_website_settings())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 117, in get_website_settings
+    hooks = frappe.get_hooks()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
+    run_after_request_hooks(request, response)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
+    "validate":help_desk.permissions.allow_file_upload
+NameError: name 'help_desk' is not defined

@@ -1,1102 +1,4 @@
-2025-01-20 07:43:18,301 ERROR frappe Failed to run after request hook
-Site: dcode.com
-Form Dict: {}
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
-    init_request(request)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
-    frappe.local.http_request = frappe.auth.HTTPRequest()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
-    self.set_session()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
-    frappe.local.login_manager = LoginManager()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
-    self.make_session(resume=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
-    frappe.local.session_obj = Session(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
-    self.resume()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
-    self.validate_user()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
-    if not frappe.get_cached_value("User", self.user, "enabled"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
-    doc = get_cached_doc(doctype, name)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1698, "Access denied for user 'firstErpDb'@'172.16.0.66'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
-    response = handle_exception(e)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
-    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
-    local.system_settings = get_cached_doc("System Settings")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1698, "Access denied for user 'firstErpDb'@'172.16.0.66'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 1495303722834506476
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
-    run_after_request_hooks(request, response)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
-    for after_request_task in frappe.get_hooks("after_request"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1514, in get_hooks
-    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
-    val = generator()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1477, in _load_app_hooks
-    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1433, in get_installed_apps
-    installed = json.loads(db.get_global("installed_apps") or "[]")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1056, in get_global
-    return self.get_default(key, user)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1060, in get_default
-    d = self.get_defaults(key, parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1076, in get_defaults
-    defaults = frappe.defaults.get_defaults_for(parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
-    frappe.qb.from_(table)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1698, "Access denied for user 'firstErpDb'@'172.16.0.66'")
-2025-01-20 07:43:19,788 ERROR frappe Failed to run after request hook
-Site: dcode.com
-Form Dict: {}
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
-    init_request(request)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
-    frappe.local.http_request = frappe.auth.HTTPRequest()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
-    self.set_session()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
-    frappe.local.login_manager = LoginManager()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
-    self.make_session(resume=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
-    frappe.local.session_obj = Session(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
-    self.resume()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
-    self.validate_user()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
-    if not frappe.get_cached_value("User", self.user, "enabled"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
-    doc = get_cached_doc(doctype, name)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1698, "Access denied for user 'firstErpDb'@'172.16.0.66'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
-    response = handle_exception(e)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
-    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
-    local.system_settings = get_cached_doc("System Settings")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1698, "Access denied for user 'firstErpDb'@'172.16.0.66'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 1495303722834506476
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
-    run_after_request_hooks(request, response)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
-    for after_request_task in frappe.get_hooks("after_request"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1514, in get_hooks
-    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
-    val = generator()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1477, in _load_app_hooks
-    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1433, in get_installed_apps
-    installed = json.loads(db.get_global("installed_apps") or "[]")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1056, in get_global
-    return self.get_default(key, user)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1060, in get_default
-    d = self.get_defaults(key, parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1076, in get_defaults
-    defaults = frappe.defaults.get_defaults_for(parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
-    frappe.qb.from_(table)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1698, "Access denied for user 'firstErpDb'@'172.16.0.66'")
-2025-01-20 07:49:54,690 ERROR frappe Failed to run after request hook
-Site: dcode.com
-Form Dict: {}
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
-    init_request(request)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
-    frappe.local.http_request = frappe.auth.HTTPRequest()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
-    self.set_session()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
-    frappe.local.login_manager = LoginManager()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
-    self.make_session(resume=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
-    frappe.local.session_obj = Session(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
-    self.resume()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
-    self.validate_user()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
-    if not frappe.get_cached_value("User", self.user, "enabled"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
-    doc = get_cached_doc(doctype, name)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
-    response = handle_exception(e)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
-    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
-    local.system_settings = get_cached_doc("System Settings")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 1495303722834506476
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
-    run_after_request_hooks(request, response)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
-    for after_request_task in frappe.get_hooks("after_request"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1514, in get_hooks
-    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
-    val = generator()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1477, in _load_app_hooks
-    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1433, in get_installed_apps
-    installed = json.loads(db.get_global("installed_apps") or "[]")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1056, in get_global
-    return self.get_default(key, user)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1060, in get_default
-    d = self.get_defaults(key, parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1076, in get_defaults
-    defaults = frappe.defaults.get_defaults_for(parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
-    frappe.qb.from_(table)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-2025-01-20 07:49:56,370 ERROR frappe Failed to run after request hook
-Site: dcode.com
-Form Dict: {}
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
-    init_request(request)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
-    frappe.local.http_request = frappe.auth.HTTPRequest()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
-    self.set_session()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
-    frappe.local.login_manager = LoginManager()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
-    self.make_session(resume=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
-    frappe.local.session_obj = Session(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
-    self.resume()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
-    self.validate_user()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
-    if not frappe.get_cached_value("User", self.user, "enabled"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
-    doc = get_cached_doc(doctype, name)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
-    response = handle_exception(e)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
-    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
-    local.system_settings = get_cached_doc("System Settings")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 1495303722834506476
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
-    run_after_request_hooks(request, response)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
-    for after_request_task in frappe.get_hooks("after_request"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1514, in get_hooks
-    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
-    val = generator()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1477, in _load_app_hooks
-    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1433, in get_installed_apps
-    installed = json.loads(db.get_global("installed_apps") or "[]")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1056, in get_global
-    return self.get_default(key, user)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1060, in get_default
-    d = self.get_defaults(key, parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1076, in get_defaults
-    defaults = frappe.defaults.get_defaults_for(parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
-    frappe.qb.from_(table)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-2025-01-20 07:50:34,678 ERROR frappe Failed to run after request hook
-Site: dcode.com
-Form Dict: {}
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
-    init_request(request)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
-    frappe.local.http_request = frappe.auth.HTTPRequest()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
-    self.set_session()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
-    frappe.local.login_manager = LoginManager()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
-    self.make_session(resume=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
-    frappe.local.session_obj = Session(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
-    self.resume()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
-    self.validate_user()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
-    if not frappe.get_cached_value("User", self.user, "enabled"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
-    doc = get_cached_doc(doctype, name)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
-    response = handle_exception(e)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
-    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
-    local.system_settings = get_cached_doc("System Settings")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 2802834334928891503
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
-    run_after_request_hooks(request, response)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
-    for after_request_task in frappe.get_hooks("after_request"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1514, in get_hooks
-    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
-    val = generator()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1477, in _load_app_hooks
-    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1433, in get_installed_apps
-    installed = json.loads(db.get_global("installed_apps") or "[]")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1056, in get_global
-    return self.get_default(key, user)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1060, in get_default
-    d = self.get_defaults(key, parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1076, in get_defaults
-    defaults = frappe.defaults.get_defaults_for(parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
-    frappe.qb.from_(table)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-2025-01-20 07:50:42,132 ERROR frappe Failed to run after request hook
-Site: dcode.com
-Form Dict: {}
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
-    init_request(request)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
-    frappe.local.http_request = frappe.auth.HTTPRequest()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
-    self.set_session()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
-    frappe.local.login_manager = LoginManager()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
-    self.make_session(resume=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
-    frappe.local.session_obj = Session(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
-    self.resume()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
-    self.validate_user()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
-    if not frappe.get_cached_value("User", self.user, "enabled"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
-    doc = get_cached_doc(doctype, name)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
-    response = handle_exception(e)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
-    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
-    local.system_settings = get_cached_doc("System Settings")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
-    doc = get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
-    controller = get_controller(doctype)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
-    return _get_controller()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
-    module_name, custom = frappe.db.get_value(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
-    result = self.get_values(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
-    out = self._get_values_from_table(
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
-    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 5740354900026072187
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
-    return frappe.local.request_cache[func][args_key]
-KeyError: 2802834334928891503
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
-    run_after_request_hooks(request, response)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
-    for after_request_task in frappe.get_hooks("after_request"):
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1514, in get_hooks
-    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
-    val = generator()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1477, in _load_app_hooks
-    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
-    return_val = func(*args, **kwargs)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1433, in get_installed_apps
-    installed = json.loads(db.get_global("installed_apps") or "[]")
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1056, in get_global
-    return self.get_default(key, user)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1060, in get_default
-    d = self.get_defaults(key, parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1076, in get_defaults
-    defaults = frappe.defaults.get_defaults_for(parent)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
-    frappe.qb.from_(table)
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
-    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
-    self.connect()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
-    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
-    conn = self._get_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
-    return self.create_connection()
-  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
-    return pymysql.connect(**self.get_connection_settings())
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
-    self.connect()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
-    self._request_authentication()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
-    auth_packet = self._read_packet()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.OperationalError: (1044, "Access denied for user 'firstErpDb'@'172.16.0.66' to database 'firstErpDb'")
-2025-01-20 08:03:07,696 ERROR frappe Failed to run after request hook
+2025-01-20 08:15:27,316 ERROR frappe Failed to run after request hook
 Site: dcode.com
 Form Dict: {}
 Traceback (most recent call last):
@@ -1225,7 +127,7 @@ During handling of the above exception, another exception occurred:
 Traceback (most recent call last):
   File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
     return frappe.local.request_cache[func][args_key]
-KeyError: -1799801131247729698
+KeyError: 8998317540736722633
 
 During handling of the above exception, another exception occurred:
 
@@ -1279,3 +181,1034 @@ Traceback (most recent call last):
   File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
     raise errorclass(errno, errval)
 pymysql.err.OperationalError: (1045, "Access denied for user 'firstErpDb'@'172.16.0.66' (using password: YES)")
+2025-01-20 08:25:22,490 ERROR frappe Failed to run after request hook
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
+    init_request(request)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
+    self.set_session()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
+    self.make_session(resume=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
+    self.resume()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
+    self.validate_user()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
+    if not frappe.get_cached_value("User", self.user, "enabled"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
+    doc = get_cached_doc(doctype, name)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
+    return _get_controller()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
+    module_name, custom = frappe.db.get_value(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
+    result = self.get_values(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
+    out = self._get_values_from_table(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'firstErpDb'@'172.16.0.66' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
+    response = handle_exception(e)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
+    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
+    local.system_settings = get_cached_doc("System Settings")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
+    return _get_controller()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
+    module_name, custom = frappe.db.get_value(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
+    result = self.get_values(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
+    out = self._get_values_from_table(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'firstErpDb'@'172.16.0.66' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 2976188399316968239
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
+    run_after_request_hooks(request, response)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1514, in get_hooks
+    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1477, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1433, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1056, in get_global
+    return self.get_default(key, user)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1060, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1076, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'firstErpDb'@'172.16.0.66' (using password: YES)")
+2025-01-20 08:25:24,147 ERROR frappe Failed to run after request hook
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
+    init_request(request)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
+    self.set_session()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
+    self.make_session(resume=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
+    self.resume()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 308, in resume
+    self.validate_user()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 232, in validate_user
+    if not frappe.get_cached_value("User", self.user, "enabled"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1166, in get_cached_value
+    doc = get_cached_doc(doctype, name)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
+    return _get_controller()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
+    module_name, custom = frappe.db.get_value(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
+    result = self.get_values(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
+    out = self._get_values_from_table(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'firstErpDb'@'172.16.0.66' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
+    response = handle_exception(e)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
+    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
+    local.system_settings = get_cached_doc("System Settings")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 91, in get_controller
+    return _get_controller()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
+    module_name, custom = frappe.db.get_value(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
+    result = self.get_values(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
+    out = self._get_values_from_table(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'firstErpDb'@'172.16.0.66' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 2976188399316968239
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
+    run_after_request_hooks(request, response)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1514, in get_hooks
+    hooks = _dict(cache().get_value("app_hooks", _load_app_hooks))
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 81, in get_value
+    val = generator()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1477, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1433, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1056, in get_global
+    return self.get_default(key, user)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1060, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1076, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'firstErpDb'@'172.16.0.66' (using password: YES)")
+2025-01-20 11:08:03,310 ERROR frappe New Exception collected with id: 2025-01-20 11:08:03.095273-10.30.165.200-be9
+Site: remotedb.com
+Form Dict: {}
+2025-01-20 11:08:05,230 ERROR frappe New Exception collected with id: 2025-01-20 11:08:05.225380-10.30.165.200-032
+Site: remotedb.com
+Form Dict: {}
+2025-01-20 11:08:07,976 ERROR frappe New Exception collected with id: 2025-01-20 11:08:07.968950-10.30.165.200-388
+Site: remotedb.com
+Form Dict: {}
+2025-01-20 11:08:11,875 ERROR frappe New Exception collected with id: 2025-01-20 11:08:11.864025-10.30.165.200-91f
+Site: remotedb.com
+Form Dict: {}
+2025-01-20 11:08:12,837 ERROR frappe New Exception collected with id: 2025-01-20 11:08:12.830918-10.30.165.200-45b
+Site: remotedb.com
+Form Dict: {}
+2025-01-20 11:08:13,424 ERROR frappe New Exception collected with id: 2025-01-20 11:08:13.416916-10.30.165.200-02f
+Site: remotedb.com
+Form Dict: {}
+2025-01-20 11:08:17,217 ERROR frappe New Exception collected with id: 2025-01-20 11:08:17.211918-10.30.165.200-fc9
+Site: remotedb.com
+Form Dict: {}
+2025-01-20 11:08:18,052 ERROR frappe New Exception collected with id: 2025-01-20 11:08:18.047551-10.30.165.200-f03
+Site: remotedb.com
+Form Dict: {}
+2025-01-20 11:08:18,730 ERROR frappe New Exception collected with id: 2025-01-20 11:08:18.725602-10.30.165.200-48a
+Site: remotedb.com
+Form Dict: {}
+2025-01-21 08:59:30,439 ERROR frappe New Exception collected with id: 2025-01-21 08:59:30.351972-10.30.165.200-a8b
+Site: remotedb.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"LibraryMember","name":"new-librarymember-rymqrtdcbp","__islocal":1,"__unsaved":1,"owner":"Administrator","first_name":"Faith","last_name":"Mutheu","email":"faithmutheu@gmail.com","phone":"0728929389"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-21 12:34:20,757 ERROR frappe New Exception collected with id: 2025-01-21 12:34:20.654082-10.30.165.200-c58
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-21 12:34:43,648 ERROR frappe New Exception collected with id: 2025-01-21 12:34:43.624352-10.30.165.200-2df
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-21 12:39:12,809 ERROR frappe New Exception collected with id: 2025-01-21 12:39:12.703463-10.30.165.200-abf
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-21 12:40:05,007 ERROR frappe New Exception collected with id: 2025-01-21 12:40:04.980712-10.30.165.200-aad
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-21 12:40:40,021 ERROR frappe New Exception collected with id: 2025-01-21 12:40:39.849332-10.30.165.200-ceb
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-21 12:40:54,931 ERROR frappe New Exception collected with id: 2025-01-21 12:40:54.838302-10.30.165.200-dd4
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-21 12:45:01,448 ERROR frappe New Exception collected with id: 2025-01-21 12:45:01.353995-10.30.165.200-f9a
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-21 12:47:30,749 ERROR frappe New Exception collected with id: 2025-01-21 12:47:30.519944-10.30.165.200-69d
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-21 12:49:39,359 ERROR frappe New Exception collected with id: 2025-01-21 12:49:39.259298-10.30.165.200-19f
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 07:07:12,538 ERROR frappe New Exception collected with id: 2025-01-22 07:07:12.445895-10.30.165.200-34e
+Site: remotedb.com
+Form Dict: {'doc': '{"name":"LT00006","owner":"Administrator","creation":"2025-01-22 10:07:08.192945","modified":"2025-01-22 10:07:08.192945","modified_by":"Administrator","docstatus":0,"idx":0,"article":"Becoming","library_member":"NLM00001","type":"Issue","date":"2025-01-31","amended_from":null,"doctype":"LibraryTransaction","__last_sync_on":"2025-01-22T07:07:08.173Z"}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-22 07:56:29,586 ERROR frappe New Exception collected with id: 2025-01-22 07:56:29.446352-10.30.165.200-2dd
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 07:56:38,688 ERROR frappe New Exception collected with id: 2025-01-22 07:56:38.657177-10.30.165.200-6a0
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 07:59:39,639 ERROR frappe New Exception collected with id: 2025-01-22 07:59:39.613664-10.30.165.200-0c9
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:02:48,054 ERROR frappe New Exception collected with id: 2025-01-22 08:02:48.026251-10.30.165.200-a6e
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:02:58,592 ERROR frappe New Exception collected with id: 2025-01-22 08:02:58.566713-10.30.165.200-f2e
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:05:05,183 ERROR frappe New Exception collected with id: 2025-01-22 08:05:05.157454-10.30.165.200-add
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:05:31,109 ERROR frappe New Exception collected with id: 2025-01-22 08:05:31.085025-10.30.165.200-90d
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:09:08,297 ERROR frappe New Exception collected with id: 2025-01-22 08:09:08.271226-10.30.165.200-b47
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:09:15,819 ERROR frappe New Exception collected with id: 2025-01-22 08:09:15.791947-10.30.165.200-c17
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:10:24,801 ERROR frappe New Exception collected with id: 2025-01-22 08:10:24.774798-10.30.165.200-031
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:11:06,766 ERROR frappe New Exception collected with id: 2025-01-22 08:11:06.740135-10.30.165.200-2a0
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:11:36,441 ERROR frappe New Exception collected with id: 2025-01-22 08:11:36.337954-10.30.165.200-061
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:11:37,342 ERROR frappe New Exception collected with id: 2025-01-22 08:11:37.320470-10.30.165.200-9f5
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-22 08:11:57,640 ERROR frappe New Exception collected with id: 2025-01-22 08:11:57.526769-10.30.165.200-39f
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryMembership', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-23 07:54:32,952 ERROR frappe New Exception collected with id: 2025-01-23 07:54:32.844116-10.30.165.200-13d
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'filters': '{"library_member":"NLM00003","article":{"name":"NLM00003","owner":"Administrator","creation":"2025-01-21 11:59:51.943954","modified":"2025-01-22 15:58:12.958938","modified_by":"Administrator","docstatus":0,"idx":0,"first_name":"Faith","last_name":"Mutheu","full_name":"Faith Mutheu","email":"faithmutheu@gmail.com","phone":"0728929389","doctype":"LibraryMember","issued_books":[],"__last_sync_on":"2025-01-23T07:54:32.679Z"}}', 'fields': '["article","library_member","type","date"]', 'cmd': 'frappe.client.get_list'}
+2025-01-24 06:41:54,667 ERROR frappe New Exception collected with id: 2025-01-24 06:41:54.547592-127.0.0.1-fdc
+Site: remotedb.com
+Form Dict: {'doc': '{"name":"LibraryTransaction","creation":"2025-01-21 14:52:29.392788","modified":"2025-01-24 09:19:47.557949","modified_by":"Administrator","owner":"Administrator","docstatus":0,"idx":0,"issingle":0,"is_virtual":0,"is_tree":0,"istable":0,"editable_grid":1,"track_changes":0,"module":"Library Management","autoname":"LT.#####","naming_rule":"Expression (old style)","name_case":"","sort_field":"modified","sort_order":"DESC","read_only":0,"in_create":0,"allow_copy":0,"allow_rename":1,"allow_import":0,"hide_toolbar":0,"track_seen":0,"max_attachments":0,"document_type":"","engine":"InnoDB","is_submittable":1,"show_name_in_global_search":0,"custom":0,"beta":0,"has_web_view":0,"allow_guest_to_view":0,"email_append_to":0,"show_title_field_in_link":0,"translated_doctype":0,"is_calendar_and_gantt":0,"quick_entry":0,"track_views":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"default_view":"List","force_re_route_to_default_view":0,"show_preview_popup":0,"index_web_pages_for_search":1,"doctype":"DocType","links":[],"states":[],"actions":[],"fields":[{"name":"n3e9h8e3u9","creation":"2025-01-21 14:52:29.392788","modified":"2025-01-24 09:19:47.557949","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"LibraryTransaction","parentfield":"fields","parenttype":"DocType","idx":1,"fieldname":"article","label":"Article","fieldtype":"Link","options":"Lib_Article","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"fetch_from":"","make_attachment_public":0,"doctype":"DocField"},{"name":"n3e9l7se2k","creation":"2025-01-21 14:52:29.392788","modified":"2025-01-24 09:19:47.557949","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"LibraryTransaction","parentfield":"fields","parenttype":"DocType","idx":2,"fieldname":"library_member","label":"Library Member","fieldtype":"Link","options":"LibraryMember","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"fetch_from":"","make_attachment_public":0,"doctype":"DocField"},{"name":"mq76ue42e9","creation":"2025-01-21 14:52:29.392788","modified":"2025-01-24 09:19:47.557949","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"LibraryTransaction","parentfield":"fields","parenttype":"DocType","idx":3,"fieldname":"type","label":"Type","fieldtype":"Select","options":"Issue\\nReturn","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"mq7611grta","creation":"2025-01-21 14:52:29.392788","modified":"2025-01-24 09:19:47.557949","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"LibraryTransaction","parentfield":"fields","parenttype":"DocType","idx":4,"fieldname":"date","label":"Date","fieldtype":"Date","search_index":0,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":0,"report_hide":0,"reqd":1,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":0,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":1,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":0,"precision":"","length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"make_attachment_public":0,"doctype":"DocField"},{"name":"mq765cr0k9","creation":"2025-01-21 14:52:29.444363","modified":"2025-01-24 09:19:47.557949","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"LibraryTransaction","parentfield":"fields","parenttype":"DocType","idx":5,"fieldname":"amended_from","label":"Amended From","fieldtype":"Link","options":"LibraryTransaction","search_index":1,"show_dashboard":0,"hidden":0,"set_only_once":0,"allow_in_quick_entry":0,"print_hide":1,"report_hide":0,"reqd":0,"bold":0,"in_global_search":0,"collapsible":0,"unique":0,"no_copy":1,"allow_on_submit":0,"show_preview_popup":0,"permlevel":0,"ignore_user_permissions":0,"columns":0,"in_list_view":0,"fetch_if_empty":0,"in_filter":0,"remember_last_selected_value":0,"ignore_xss_filter":0,"print_hide_if_no_value":0,"allow_bulk_edit":0,"in_standard_filter":0,"in_preview":0,"read_only":1,"length":0,"translatable":0,"hide_border":0,"hide_days":0,"hide_seconds":0,"non_negative":0,"is_virtual":0,"sort_options":0,"make_attachment_public":0,"doctype":"DocField"},{"docstatus":0,"doctype":"DocField","name":"votgup533t","__unsaved":1,"owner":"Administrator","fieldtype":"Int","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":1,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"LibraryTransaction","parentfield":"fields","parenttype":"DocType","idx":6,"label":"late_fee","fieldname":"late_fee","creation":"2025-01-21 14:52:29.392788","modified":"2025-01-24 09:19:47.557949","modified_by":"Administrator","columns":0,"length":0},{"docstatus":0,"doctype":"DocField","name":"new-docfield-rnpujuedsa","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Date","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"hidden":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"parent":"LibraryTransaction","parentfield":"fields","parenttype":"DocType","idx":7,"__unedited":false,"label":"due_date","fieldname":"due_date"}],"permissions":[{"name":"mq76mp1s7u","creation":"2025-01-21 14:52:29.392788","modified":"2025-01-24 09:19:47.557949","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"LibraryTransaction","parentfield":"permissions","parenttype":"DocType","idx":1,"permlevel":0,"role":"System Manager","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"set_user_permissions":0,"doctype":"DocPerm"},{"name":"mq76ftmg36","creation":"2025-01-21 14:52:29.392788","modified":"2025-01-24 09:19:47.557949","modified_by":"Administrator","owner":"Administrator","docstatus":0,"parent":"LibraryTransaction","parentfield":"permissions","parenttype":"DocType","idx":2,"permlevel":0,"role":"Librarian","read":1,"write":1,"create":1,"submit":0,"cancel":0,"delete":1,"amend":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"if_owner":0,"select":0,"set_user_permissions":0,"doctype":"DocPerm"}],"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-01-24 07:18:28,850 ERROR frappe New Exception collected with id: 2025-01-24 07:18:28.750068-127.0.0.1-43e
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 10:07:52.637577', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-24 07:18:44,661 ERROR frappe New Exception collected with id: 2025-01-24 07:18:44.633294-127.0.0.1-822
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 10:07:52.637577', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-24 07:20:31,410 ERROR frappe New Exception collected with id: 2025-01-24 07:20:31.237299-127.0.0.1-053
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 10:07:52.637577', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-24 07:22:19,276 ERROR frappe New Exception collected with id: 2025-01-24 07:22:19.172899-127.0.0.1-943
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 10:07:52.637577', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-24 07:23:47,223 ERROR frappe New Exception collected with id: 2025-01-24 07:23:47.116816-127.0.0.1-2b4
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 10:07:52.637577', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-24 07:25:37,392 ERROR frappe New Exception collected with id: 2025-01-24 07:25:37.284857-127.0.0.1-4a2
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 10:07:52.637577', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-24 07:26:33,325 ERROR frappe New Exception collected with id: 2025-01-24 07:26:33.133837-127.0.0.1-2f1
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 10:07:52.637577', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-24 07:27:26,533 ERROR frappe New Exception collected with id: 2025-01-24 07:27:26.430242-127.0.0.1-5be
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 10:07:52.637577', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-24 07:27:39,865 ERROR frappe New Exception collected with id: 2025-01-24 07:27:39.664194-127.0.0.1-2f1
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 10:07:52.637577', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-24 07:28:11,482 ERROR frappe New Exception collected with id: 2025-01-24 07:28:11.380238-127.0.0.1-789
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 10:07:52.637577', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-24 07:28:15,688 ERROR frappe New Exception collected with id: 2025-01-24 07:28:15.663433-127.0.0.1-71a
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 12:29:11,036 ERROR frappe New Exception collected with id: 2025-01-27 12:29:10.900221-127.0.0.1-2d4
+Site: remotedb.com
+Form Dict: {'doctype': 'Lib_Article', 'with_parent': '1', 'cached_timestamp': '2025-01-27 15:11:10.799649', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 12:53:19,843 ERROR frappe New Exception collected with id: 2025-01-27 12:53:19.754081-127.0.0.1-89f
+Site: remotedb.com
+Form Dict: {'doctype': 'Lib_Article', 'name': 'Diary Of A Wimpy Kid', 'cmd': 'frappe.desk.form.load.getdoc'}
+2025-01-27 12:53:26,123 ERROR frappe New Exception collected with id: 2025-01-27 12:53:26.097209-127.0.0.1-97c
+Site: remotedb.com
+Form Dict: {'doctype': 'Lib_Article', 'with_parent': '1', 'cached_timestamp': '2025-01-27 15:11:10.799649', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:02:04,758 ERROR frappe New Exception collected with id: 2025-01-27 13:02:04.660037-127.0.0.1-02a
+Site: remotedb.com
+Form Dict: {'doctype': 'Lib_Article', 'with_parent': '1', 'cached_timestamp': '2025-01-27 15:11:10.799649', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:02:27,541 ERROR frappe New Exception collected with id: 2025-01-27 13:02:27.522561-127.0.0.1-2b7
+Site: remotedb.com
+Form Dict: {'doctype': 'Lib_Article', 'with_parent': '1', 'cached_timestamp': '2025-01-27 15:11:10.799649', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:06:52,894 ERROR frappe New Exception collected with id: 2025-01-27 13:06:52.802589-10.30.165.200-5e8
+Site: remotedb.com
+Form Dict: {'library_member': 'NLM00001', 'cmd': 'library_management.library_management.doctype.librarytransaction.librarytransaction.validate_membership_status'}
+2025-01-27 13:10:03,532 ERROR frappe New Exception collected with id: 2025-01-27 13:10:03.450474-10.30.165.200-183
+Site: remotedb.com
+Form Dict: {'library_member': 'NLM00002', 'cmd': 'library_management.library_management.doctype.librarytransaction.librarytransaction.validate_membership_status'}
+2025-01-27 13:35:13,689 ERROR frappe New Exception collected with id: 2025-01-27 13:35:13.504539-10.30.165.200-69e
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:35:32,093 ERROR frappe New Exception collected with id: 2025-01-27 13:35:32.066602-10.30.165.200-11f
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:41:58,834 ERROR frappe New Exception collected with id: 2025-01-27 13:41:58.738786-10.30.165.200-1dd
+Site: remotedb.com
+Form Dict: {'cmd': 'library_management.library_management.doctype.librarytransaction.librarytransaction.validate_membership_status'}
+2025-01-27 13:42:40,712 ERROR frappe New Exception collected with id: 2025-01-27 13:42:40.631231-10.30.165.200-5d6
+Site: remotedb.com
+Form Dict: {'cmd': 'library_management.library_management.doctype.librarytransaction.librarytransaction.validate_membership_status'}
+2025-01-27 13:42:53,751 ERROR frappe New Exception collected with id: 2025-01-27 13:42:53.749250-10.30.165.200-357
+Site: remotedb.com
+Form Dict: {'cmd': 'library_management.library_management.doctype.librarytransaction.librarytransaction.validate_membership_status'}
+2025-01-27 13:49:20,825 ERROR frappe New Exception collected with id: 2025-01-27 13:49:20.748011-10.30.165.200-87b
+Site: remotedb.com
+Form Dict: {'cmd': 'library_management.library_management.doctype.librarytransaction.librarytransaction.validate_membership_status'}
+2025-01-27 13:55:21,354 ERROR frappe New Exception collected with id: 2025-01-27 13:55:21.259456-10.30.165.200-d59
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:55:49,009 ERROR frappe New Exception collected with id: 2025-01-27 13:55:48.853336-10.30.165.200-e4d
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:56:14,449 ERROR frappe New Exception collected with id: 2025-01-27 13:56:14.272616-10.30.165.200-374
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:57:02,032 ERROR frappe New Exception collected with id: 2025-01-27 13:57:01.859532-10.30.165.200-8ee
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:58:38,075 ERROR frappe New Exception collected with id: 2025-01-27 13:58:38.052076-10.30.165.200-4b1
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:59:00,504 ERROR frappe New Exception collected with id: 2025-01-27 13:59:00.222623-10.30.165.200-6a4
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-27 13:59:36,351 ERROR frappe New Exception collected with id: 2025-01-27 13:59:36.247724-10.30.165.200-734
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-28 06:39:14,045 ERROR frappe New Exception collected with id: 2025-01-28 06:39:13.960655-127.0.0.1-83a
+Site: remotedb.com
+Form Dict: {'cmd': 'library_management.library_management.doctype.librarytransaction.librarytransaction.validate_membership_status'}
+2025-01-28 07:04:22,644 ERROR frappe New Exception collected with id: 2025-01-28 07:04:22.555436-127.0.0.1-6cc
+Site: remotedb.com
+Form Dict: {'cmd': 'library_management.library_management.doctype.librarytransaction.librarytransaction.validate_membership_status'}
+2025-01-28 07:13:04,062 ERROR frappe New Exception collected with id: 2025-01-28 07:13:03.962989-127.0.0.1-342
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-28 07:13:27,487 ERROR frappe New Exception collected with id: 2025-01-28 07:13:27.360197-127.0.0.1-c42
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-28 07:14:48,661 ERROR frappe New Exception collected with id: 2025-01-28 07:14:48.470190-127.0.0.1-700
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-28 07:16:08,535 ERROR frappe New Exception collected with id: 2025-01-28 07:16:08.423586-127.0.0.1-b59
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-28 07:17:54,992 ERROR frappe New Exception collected with id: 2025-01-28 07:17:54.892119-127.0.0.1-458
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-28 07:18:29,594 ERROR frappe New Exception collected with id: 2025-01-28 07:18:29.490208-127.0.0.1-44e
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-28 07:19:42,165 ERROR frappe New Exception collected with id: 2025-01-28 07:19:42.061650-127.0.0.1-2e8
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-28 07:24:49,826 ERROR frappe New Exception collected with id: 2025-01-28 07:24:49.645178-127.0.0.1-d42
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-28 07:25:24,171 ERROR frappe New Exception collected with id: 2025-01-28 07:25:24.061998-127.0.0.1-592
+Site: remotedb.com
+Form Dict: {'doctype': 'LibraryTransaction', 'with_parent': '1', 'cached_timestamp': '2025-01-24 12:56:07.307142', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2025-01-29 13:03:31,521 ERROR frappe New Exception collected with id: 2025-01-29 13:03:31.509179-127.0.0.1-16e
+Site: remotedb.com
+Form Dict: {'user': 'ken@example.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2025-01-29 13:03:45,628 ERROR frappe New Exception collected with id: 2025-01-29 13:03:45.622644-127.0.0.1-927
+Site: remotedb.com
+Form Dict: {'user': 'ken@example.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2025-01-29 13:04:24,706 ERROR frappe New Exception collected with id: 2025-01-29 13:04:24.698980-127.0.0.1-80f
+Site: remotedb.com
+Form Dict: {'user': 'ken@example.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2025-01-29 13:16:11,665 ERROR frappe New Exception collected with id: 2025-01-29 13:16:11.663311-127.0.0.1-db3
+Site: remotedb.com
+Form Dict: {'cmd': 'frappe.core.doctype.user.user.has_email_account'}
+2025-01-30 13:54:00,180 ERROR frappe New Exception collected with id: 2025-01-30 13:54:00.083957-10.30.165.200-6d6
+Site: remotedb.com
+Form Dict: {'txt': '', 'doctype': 'DocType', 'ignore_user_permissions': '0', 'reference_doctype': 'User Permission', 'filters': '{"issingle":0,"istable":0}'}
+2025-01-30 13:54:00,182 ERROR frappe Failed to run after request hook
+Site: remotedb.com
+Form Dict: {'txt': '', 'doctype': 'DocType', 'ignore_user_permissions': '0', 'reference_doctype': 'User Permission', 'filters': '{"issingle":0,"istable":0}'}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
+    run_after_request_hooks(request, response)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1481, in _load_app_hooks
+    app_hooks = get_module(f"{app}.hooks")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1343, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/abigael/frappe-bench/apps/library_management/library_management/hooks.py", line 16, in <module>
+    frappe.get_doc('Library Settings').add_permission('Library Member', 'read')
+NameError: name 'frappe' is not defined
+2025-01-30 13:54:22,065 ERROR frappe New Exception collected with id: 2025-01-30 13:54:21.979317-10.30.165.200-c11
+Site: remotedb.com
+Form Dict: {'redirect-to': '/app/user-permission/new-user-permission-repldvgrxj'}
+2025-01-30 13:54:22,644 ERROR frappe New Exception collected with id: 2025-01-30 13:54:22.617968-10.30.165.200-5ed
+Site: remotedb.com
+Form Dict: {}
+2025-01-30 13:54:22,889 ERROR frappe New Exception collected with id: 2025-01-30 13:54:22.867604-10.30.165.200-66c
+Site: remotedb.com
+Form Dict: {'cmd': 'erpnext.e_commerce.doctype.e_commerce_settings.e_commerce_settings.is_cart_enabled'}
+2025-01-30 13:54:22,909 ERROR frappe New Exception collected with id: 2025-01-30 13:54:22.890713-172.16.0.66-247
+Site: remotedb.com
+Form Dict: {'sid': 'Guest'}
+2025-01-31 12:57:56,041 ERROR frappe New Exception collected with id: 2025-01-31 12:57:55.944043-127.0.0.1-d92
+Site: remotedb.com
+Form Dict: {'cmd': 'frappe.model.workflow.apply_workflow'}
+2025-02-03 12:04:27,845 ERROR frappe New Exception collected with id: 2025-02-03 12:04:27.829441-127.0.0.1-512
+Site: remotedb.com
+Form Dict: {'error': 'access_denied', 'state': 'QPRaYoW88IF0Ux2lIip59ZuXmG6FjE', 'cmd': 'frappe.integrations.doctype.connected_app.connected_app.callback'}
+2025-02-03 12:05:15,787 ERROR frappe New Exception collected with id: 2025-02-03 12:05:15.784792-127.0.0.1-754
+Site: remotedb.com
+Form Dict: {'error': 'access_denied', 'state': 'BsdUtot66Min1oB7zas2vyxm8b7a8W', 'cmd': 'frappe.integrations.doctype.connected_app.connected_app.callback'}
+2025-02-03 12:05:18,483 ERROR frappe New Exception collected with id: 2025-02-03 12:05:18.481228-127.0.0.1-66a
+Site: remotedb.com
+Form Dict: {'error': 'access_denied', 'state': 'BsdUtot66Min1oB7zas2vyxm8b7a8W', 'cmd': 'frappe.integrations.doctype.connected_app.connected_app.callback'}
+2025-02-04 12:58:10,815 ERROR frappe Failed to run after request hook
+Site: dcode.com
+Form Dict: {'sid': '2c84e33179de3b514fedef4b90540bf5779fe262022ddf16485b7550'}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
+    init_request(request)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
+    self.set_session()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
+    self.make_session(resume=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
+    self.resume()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 303, in resume
+    data = self.get_session_record()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 322, in get_session_record
+    r = self.get_session_data()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 338, in get_session_data
+    data = self.get_session_data_from_db()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 363, in get_session_data_from_db
+    frappe.db.get_value(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
+    result = self.get_values(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
+    out = self._get_values_from_table(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'firstErpDb'@'172.16.0.66' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
+    response = handle_exception(e)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
+    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
+    local.system_settings = get_cached_doc("System Settings")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in get_controller
+    site_controllers[doctype] = _get_controller()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
+    module_name, custom = frappe.db.get_value(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
+    result = self.get_values(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
+    out = self._get_values_from_table(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'firstErpDb'@'172.16.0.66' (using password: YES)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 6181438478982960108
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
+    run_after_request_hooks(request, response)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1477, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1433, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1056, in get_global
+    return self.get_default(key, user)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1060, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1076, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'firstErpDb'@'172.16.0.66' (using password: YES)")
+2025-02-07 07:19:27,244 ERROR frappe New Exception collected with id: 2025-02-07 07:19:27.149664-10.30.166.51-a59
+Site: remotedb.com
+Form Dict: {'report_name': 'Library Transactions Query Report', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2025-02-07 07:21:13,354 ERROR frappe New Exception collected with id: 2025-02-07 07:21:13.350155-10.30.166.51-d99
+Site: remotedb.com
+Form Dict: {'report_name': 'Library Transactions Query Report', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2025-02-07 13:16:43,733 ERROR frappe New Exception collected with id: 2025-02-07 13:16:43.510242-127.0.0.1-6d4
+Site: remotedb.com
+Form Dict: {'report_name': 'Library Transaction Scripted', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2025-02-07 13:18:10,256 ERROR frappe New Exception collected with id: 2025-02-07 13:18:10.248737-127.0.0.1-b37
+Site: remotedb.com
+Form Dict: {'report_name': 'Library Transaction Scripted', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2025-02-10 11:44:47,663 ERROR frappe Failed to run after request hook
+Site: dcode.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 86, in application
+    init_request(request)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 177, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 38, in __init__
+    self.set_session()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 72, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 118, in __init__
+    self.make_session(resume=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/auth.py", line 204, in make_session
+    frappe.local.session_obj = Session(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 224, in __init__
+    self.resume()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 303, in resume
+    data = self.get_session_record()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 322, in get_session_record
+    r = self.get_session_data()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 338, in get_session_data
+    data = self.get_session_data_from_db()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/sessions.py", line 363, in get_session_data_from_db
+    frappe.db.get_value(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
+    result = self.get_values(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
+    out = self._get_values_from_table(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1698, "Access denied for user 'firstErpDb'@'172.16.0.66'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 115, in application
+    response = handle_exception(e)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 298, in handle_exception
+    allow_traceback = frappe.get_system_settings("allow_error_traceback") if frappe.db else False
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 2289, in get_system_settings
+    local.system_settings = get_cached_doc("System Settings")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1109, in get_cached_doc
+    doc = get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1200, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/document.py", line 76, in get_doc
+    controller = get_controller(doctype)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 95, in get_controller
+    site_controllers[doctype] = _get_controller()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/model/base_document.py", line 61, in _get_controller
+    module_name, custom = frappe.db.get_value(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 568, in get_value
+    result = self.get_values(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 672, in get_values
+    out = self._get_values_from_table(
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 910, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1698, "Access denied for user 'firstErpDb'@'172.16.0.66'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 55, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: -5589323043183959248
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 129, in application
+    run_after_request_hooks(request, response)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/app.py", line 145, in run_after_request_hooks
+    for after_request_task in frappe.get_hooks("after_request"):
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1512, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1477, in _load_app_hooks
+    apps = [app_name] if app_name else get_installed_apps(_ensure_on_bench=True)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/__init__.py", line 1433, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1056, in get_global
+    return self.get_default(key, user)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1060, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 1076, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/defaults.py", line 238, in get_defaults_for
+    frappe.qb.from_(table)
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "/home/abigael/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/abigael/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1698, "Access denied for user 'firstErpDb'@'172.16.0.66'")
