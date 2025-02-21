@@ -2416,3 +2416,9 @@ To avoid seeing this warning, set shallow_clone to false in your common_site_con
 2025-02-20 12:00:01,418 INFO /usr/local/bin/bench --verbose --site all backup
 2025-02-20 12:06:16,111 INFO /home/abigael/.local/bin/bench clear-cache
 2025-02-20 12:06:24,075 INFO /home/abigael/.local/bin/bench clear-website-cache
+2025-02-20 18:00:02,041 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-21 00:00:01,664 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-21 06:00:01,301 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-21 06:45:17,541 INFO /home/abigael/.local/bin/bench start
+2025-02-21 12:00:01,947 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-21 13:26:12,470 INFO /home/abigael/.local/bin/bench --site yoursite set-config allow_workspaces 1

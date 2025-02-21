@@ -1443,3 +1443,6 @@ Traceback (most recent call last):
   File "/home/abigael/frappe-bench/apps/help_desk/help_desk/hooks.py", line 129, in <module>
     "validate":help_desk.permissions.allow_file_upload
 NameError: name 'help_desk' is not defined
+2025-02-20 13:37:17,513 ERROR frappe New Exception collected with id: 2025-02-20 13:37:17.303793-10.30.166.51-7a8
+Site: helpdesk-mtrh.com
+Form Dict: {'txt': '', 'doctype': 'User', 'ignore_user_permissions': '0', 'reference_doctype': 'Help Desk Issue', 'query': 'frappe.core.doctype.user.user.get_users', 'filters': '{"role":"Technician"}', 'cmd': 'frappe.desk.search.search_link'}
