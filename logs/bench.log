@@ -2422,3 +2422,18 @@ To avoid seeing this warning, set shallow_clone to false in your common_site_con
 2025-02-21 06:45:17,541 INFO /home/abigael/.local/bin/bench start
 2025-02-21 12:00:01,947 INFO /usr/local/bin/bench --verbose --site all backup
 2025-02-21 13:26:12,470 INFO /home/abigael/.local/bin/bench --site yoursite set-config allow_workspaces 1
+2025-02-21 18:00:01,581 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-22 00:00:01,199 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-22 06:00:01,817 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-22 12:00:01,453 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-22 18:00:02,093 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-23 00:00:01,742 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-23 06:00:01,378 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-23 12:00:02,028 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-23 18:00:01,791 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-24 00:00:01,438 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-24 06:00:02,051 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-24 12:00:01,799 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-24 18:00:01,452 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-25 00:00:02,089 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-25 06:00:01,690 INFO /usr/local/bin/bench --verbose --site all backup
