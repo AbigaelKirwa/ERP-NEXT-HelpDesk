@@ -2437,3 +2437,14 @@ To avoid seeing this warning, set shallow_clone to false in your common_site_con
 2025-02-24 18:00:01,452 INFO /usr/local/bin/bench --verbose --site all backup
 2025-02-25 00:00:02,089 INFO /usr/local/bin/bench --verbose --site all backup
 2025-02-25 06:00:01,690 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-25 07:39:39,116 INFO /home/abigael/.local/bin/bench --site helpdesk-mtrh.com clear-cache
+2025-02-25 07:42:49,724 INFO /home/abigael/.local/bin/bench clear-cache
+2025-02-25 07:42:59,578 INFO /home/abigael/.local/bin/bench clear-website-cache
+2025-02-25 08:06:27,746 INFO /home/abigael/.local/bin/bench clear-website-cache
+2025-02-25 08:06:30,141 INFO /home/abigael/.local/bin/bench clear-cache
+2025-02-25 08:32:47,899 INFO /home/abigael/.local/bin/bench --site helpdesk-mtrh.com clear-cache
+2025-02-25 08:32:50,244 INFO /home/abigael/.local/bin/bench clear-cache
+2025-02-25 08:32:53,526 INFO /home/abigael/.local/bin/bench clear-website-cache
+2025-02-25 08:33:40,434 INFO /home/abigael/.local/bin/bench --site helpdesk-mtrh.com clear-cache
+2025-02-25 08:33:46,589 INFO /home/abigael/.local/bin/bench clear-cache
+2025-02-25 08:33:50,208 INFO /home/abigael/.local/bin/bench clear-website-cache
