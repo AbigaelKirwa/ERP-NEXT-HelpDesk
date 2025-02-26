@@ -363,3 +363,6 @@ Form Dict: {'txt': '', 'doctype': 'User', 'ignore_user_permissions': '0', 'refer
 2025-02-26 06:04:11,642 ERROR frappe New Exception collected with id: 2025-02-26 06:04:11.534967-10.50.0.179-dc3
 Site: helpdesk-mtrh.com
 Form Dict: {'txt': 'Mark Issue as Unresolved', 'doctype': 'Workflow Action Master', 'ignore_user_permissions': '0', 'reference_doctype': 'Workflow Transition', 'cmd': 'frappe.desk.search.search_link'}
+2025-02-26 12:38:56,899 ERROR frappe New Exception collected with id: 2025-02-26 12:38:56.896152-10.50.0.179-fd8
+Site: helpdesk-mtrh.com
+Form Dict: {'txt': 'Mark Issue as UnresolvedStatus', 'doctype': 'Workflow Action Master', 'ignore_user_permissions': '0', 'reference_doctype': 'Workflow Transition', 'cmd': 'frappe.desk.search.search_link'}

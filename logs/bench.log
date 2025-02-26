@@ -2523,3 +2523,4 @@ To avoid seeing this warning, set shallow_clone to false in your common_site_con
 2025-02-25 18:00:01,386 INFO /usr/local/bin/bench --verbose --site all backup
 2025-02-26 00:00:01,515 INFO /usr/local/bin/bench --verbose --site all backup
 2025-02-26 06:00:01,784 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-26 12:00:01,910 INFO /usr/local/bin/bench --verbose --site all backup
