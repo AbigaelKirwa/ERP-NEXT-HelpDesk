@@ -1446,3 +1446,6 @@ NameError: name 'help_desk' is not defined
 2025-02-20 13:37:17,513 ERROR frappe New Exception collected with id: 2025-02-20 13:37:17.303793-10.30.166.51-7a8
 Site: helpdesk-mtrh.com
 Form Dict: {'txt': '', 'doctype': 'User', 'ignore_user_permissions': '0', 'reference_doctype': 'Help Desk Issue', 'query': 'frappe.core.doctype.user.user.get_users', 'filters': '{"role":"Technician"}', 'cmd': 'frappe.desk.search.search_link'}
+2025-02-26 06:04:11,642 ERROR frappe New Exception collected with id: 2025-02-26 06:04:11.534967-10.50.0.179-dc3
+Site: helpdesk-mtrh.com
+Form Dict: {'txt': 'Mark Issue as Unresolved', 'doctype': 'Workflow Action Master', 'ignore_user_permissions': '0', 'reference_doctype': 'Workflow Transition', 'cmd': 'frappe.desk.search.search_link'}

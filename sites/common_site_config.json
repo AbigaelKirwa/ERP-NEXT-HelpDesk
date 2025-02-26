@@ -3,6 +3,7 @@
  "db_host": "172.16.0.68",
  "developer_mode": true,
  "developerr_mode": true,
+ "dns_multitenant": true,
  "file_watcher_port": 6787,
  "frappe_user": "abigael",
  "gunicorn_workers": 33,

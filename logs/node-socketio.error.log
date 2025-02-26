@@ -4188,3 +4188,1719 @@ Emitted 'error' event on RedisClient instance at:
 }
 
 Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at Server.listen (node:net:1953:7)
+    at Server.attach (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:226:17)
+    at new Server (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:119:18)
+    at module.exports (/home/abigael/frappe-bench/apps/frappe/node_modules/socket.io/dist/index.js:809:33)
+    at Object.<anonymous> (/home/abigael/frappe-bench/apps/frappe/socketio.js:9:32)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 9000
+}
+
+Node.js v18.20.5

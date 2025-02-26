@@ -2956,3 +2956,5 @@ ALTER TABLE `tabHelp Desk Issue` ADD UNIQUE INDEX IF NOT EXISTS title (`title`)
 ALTER TABLE `tabHelp Desk Issue` ADD COLUMN `amended_from` varchar(140)
 2025-02-20 13:53:48,239 WARNING database DDL Query made to DB:
 ALTER TABLE `tabHelp Desk Issue` ADD INDEX `amended_from_index`(`amended_from`)
+2025-02-26 06:32:18,047 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHelp Desk Issue` ADD COLUMN `unresolved_details` longtext

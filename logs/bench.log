@@ -2448,3 +2448,78 @@ To avoid seeing this warning, set shallow_clone to false in your common_site_con
 2025-02-25 08:33:40,434 INFO /home/abigael/.local/bin/bench --site helpdesk-mtrh.com clear-cache
 2025-02-25 08:33:46,589 INFO /home/abigael/.local/bin/bench clear-cache
 2025-02-25 08:33:50,208 INFO /home/abigael/.local/bin/bench clear-website-cache
+2025-02-25 12:00:01,347 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-25 12:39:13,588 INFO /home/abigael/.local/bin/bench setup lets-encrypt helpdesk-mtrh.com
+2025-02-25 12:39:13,588 WARNING superuser privileges required for this command
+2025-02-25 12:39:50,416 INFO /usr/local/bin/bench setup lets-encrypt helpdesk-mtrh.com
+2025-02-25 12:41:19,576 INFO /usr/local/bin/bench config dns_multitenant on
+2025-02-25 12:41:30,896 INFO /usr/local/bin/bench restart
+2025-02-25 12:41:31,826 DEBUG cd /home/abigael/frappe-bench && supervisorctl restart frappe:
+2025-02-25 12:41:32,073 WARNING cd /home/abigael/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-25 12:41:32,073 WARNING /usr/local/bin/bench restart executed with exit code 1
+2025-02-25 12:43:17,806 INFO /home/abigael/.local/bin/bench schedule
+2025-02-25 12:43:17,829 INFO /home/abigael/.local/bin/bench worker --queue long,default,short
+2025-02-25 12:43:17,831 INFO /home/abigael/.local/bin/bench worker --queue short,default
+2025-02-25 12:43:31,228 INFO /home/abigael/.local/bin/bench restart
+2025-02-25 12:43:31,739 DEBUG cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2025-02-25 12:43:39,056 WARNING cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2025-02-25 12:43:39,056 WARNING /home/abigael/.local/bin/bench restart executed with exit code 1
+2025-02-25 12:44:21,632 INFO /home/abigael/.local/bin/bench worker --queue long,default,short
+2025-02-25 12:44:21,699 INFO /home/abigael/.local/bin/bench worker --queue short,default
+2025-02-25 12:44:21,702 INFO /home/abigael/.local/bin/bench schedule
+2025-02-25 12:44:41,197 INFO /home/abigael/.local/bin/bench restart
+2025-02-25 12:44:41,736 DEBUG cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2025-02-25 12:44:48,872 WARNING cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2025-02-25 12:44:48,872 WARNING /home/abigael/.local/bin/bench restart executed with exit code 1
+2025-02-25 12:45:06,252 INFO /home/abigael/.local/bin/bench schedule
+2025-02-25 12:45:06,263 INFO /home/abigael/.local/bin/bench worker --queue long,default,short
+2025-02-25 12:45:06,274 INFO /home/abigael/.local/bin/bench worker --queue short,default
+2025-02-25 12:45:10,536 INFO /home/abigael/.local/bin/bench restart
+2025-02-25 12:45:11,101 DEBUG cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2025-02-25 12:45:14,874 WARNING cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2025-02-25 12:45:14,874 WARNING /home/abigael/.local/bin/bench restart executed with exit code 1
+2025-02-25 12:46:21,491 INFO /home/abigael/.local/bin/bench restart
+2025-02-25 12:46:21,995 DEBUG cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2025-02-25 12:46:29,384 WARNING cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2025-02-25 12:46:29,385 WARNING /home/abigael/.local/bin/bench restart executed with exit code 1
+2025-02-25 12:48:36,383 INFO /usr/local/bin/bench setup lets-encrypt helpdesk-mtrh.com
+2025-02-25 12:48:39,577 DEBUG sudo systemctl stop nginx
+2025-02-25 12:48:39,632 DEBUG /usr/bin/certbot  --config /etc/letsencrypt/configs/helpdesk-mtrh.com.cfg certonly
+2025-02-25 12:48:40,113 WARNING /usr/bin/certbot  --config /etc/letsencrypt/configs/helpdesk-mtrh.com.cfg certonly executed with exit code 1
+2025-02-25 12:48:40,113 DEBUG sudo systemctl start nginx
+2025-02-25 12:49:12,866 INFO /home/abigael/.local/bin/bench restart
+2025-02-25 12:49:13,365 DEBUG cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2025-02-25 12:49:16,888 WARNING cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2025-02-25 12:49:16,888 WARNING /home/abigael/.local/bin/bench restart executed with exit code 1
+2025-02-25 12:50:24,445 INFO /home/abigael/.local/bin/bench restart
+2025-02-25 12:50:24,935 DEBUG cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2025-02-25 12:50:26,916 WARNING cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2025-02-25 12:50:26,916 WARNING /home/abigael/.local/bin/bench restart executed with exit code 1
+2025-02-25 12:52:30,748 INFO /usr/local/bin/bench restart
+2025-02-25 12:52:31,695 DEBUG cd /home/abigael/frappe-bench && supervisorctl restart frappe:
+2025-02-25 12:52:31,945 WARNING cd /home/abigael/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-25 12:52:31,945 WARNING /usr/local/bin/bench restart executed with exit code 1
+2025-02-25 12:52:46,004 INFO /home/abigael/.local/bin/bench restart
+2025-02-25 12:52:46,528 DEBUG cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2025-02-25 12:52:49,541 WARNING cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2025-02-25 12:52:49,541 WARNING /home/abigael/.local/bin/bench restart executed with exit code 1
+2025-02-25 12:58:54,716 INFO /home/abigael/.local/bin/bench setup lets-encrypt your-site-name
+2025-02-25 12:58:54,716 WARNING superuser privileges required for this command
+2025-02-25 12:59:23,782 INFO /usr/local/bin/bench setup lets-encrypt helpdesk-mtrh.com
+2025-02-25 12:59:26,838 DEBUG sudo systemctl stop nginx
+2025-02-25 12:59:26,897 DEBUG /usr/bin/certbot  --config /etc/letsencrypt/configs/helpdesk-mtrh.com.cfg certonly
+2025-02-25 12:59:27,407 WARNING /usr/bin/certbot  --config /etc/letsencrypt/configs/helpdesk-mtrh.com.cfg certonly executed with exit code 1
+2025-02-25 12:59:27,407 DEBUG sudo systemctl start nginx
+2025-02-25 13:13:24,247 INFO /usr/local/bin/bench setup lets-encrypt helpdesk-mtrh.com
+2025-02-25 13:13:27,124 DEBUG sudo systemctl stop nginx
+2025-02-25 13:13:27,181 DEBUG /usr/bin/certbot  --config /etc/letsencrypt/configs/helpdesk-mtrh.com.cfg certonly
+2025-02-25 13:14:39,812 WARNING /usr/bin/certbot  --config /etc/letsencrypt/configs/helpdesk-mtrh.com.cfg certonly executed with exit code 1
+2025-02-25 13:14:39,813 DEBUG sudo systemctl start nginx
+2025-02-25 13:18:58,205 INFO /home/abigael/.local/bin/bench build
+2025-02-25 13:19:20,628 INFO /home/abigael/.local/bin/bench restart
+2025-02-25 13:19:21,142 DEBUG cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2025-02-25 13:19:24,161 WARNING cd /home/abigael/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2025-02-25 13:19:24,161 WARNING /home/abigael/.local/bin/bench restart executed with exit code 1
+2025-02-25 18:00:01,386 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-26 00:00:01,515 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-26 06:00:01,784 INFO /usr/local/bin/bench --verbose --site all backup

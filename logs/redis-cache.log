@@ -1338,3 +1338,113 @@
 2054831:M 18 Feb 2025 13:37:33.085 # User requested shutdown...
 2054831:M 18 Feb 2025 13:37:33.085 * Removing the pid file.
 2054831:M 18 Feb 2025 13:37:33.085 # Redis is now ready to exit, bye bye...
+2270124:C 25 Feb 2025 12:43:17.593 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270124:C 25 Feb 2025 12:43:17.593 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270124, just started
+2270124:C 25 Feb 2025 12:43:17.593 # Configuration loaded
+2270124:M 25 Feb 2025 12:43:17.594 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270124:M 25 Feb 2025 12:43:17.594 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270195:C 25 Feb 2025 12:43:18.612 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270195:C 25 Feb 2025 12:43:18.612 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270195, just started
+2270195:C 25 Feb 2025 12:43:18.612 # Configuration loaded
+2270195:M 25 Feb 2025 12:43:18.613 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270195:M 25 Feb 2025 12:43:18.613 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270264:C 25 Feb 2025 12:43:21.590 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270264:C 25 Feb 2025 12:43:21.590 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270264, just started
+2270264:C 25 Feb 2025 12:43:21.590 # Configuration loaded
+2270264:M 25 Feb 2025 12:43:21.591 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270264:M 25 Feb 2025 12:43:21.591 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270303:C 25 Feb 2025 12:43:24.615 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270303:C 25 Feb 2025 12:43:24.615 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270303, just started
+2270303:C 25 Feb 2025 12:43:24.615 # Configuration loaded
+2270303:M 25 Feb 2025 12:43:24.616 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270303:M 25 Feb 2025 12:43:24.616 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270339:C 25 Feb 2025 12:43:29.334 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270339:C 25 Feb 2025 12:43:29.334 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270339, just started
+2270339:C 25 Feb 2025 12:43:29.334 # Configuration loaded
+2270339:M 25 Feb 2025 12:43:29.334 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270339:M 25 Feb 2025 12:43:29.334 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270406:C 25 Feb 2025 12:43:35.260 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270406:C 25 Feb 2025 12:43:35.260 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270406, just started
+2270406:C 25 Feb 2025 12:43:35.260 # Configuration loaded
+2270406:M 25 Feb 2025 12:43:35.261 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270406:M 25 Feb 2025 12:43:35.261 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270451:C 25 Feb 2025 12:43:42.037 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270451:C 25 Feb 2025 12:43:42.037 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270451, just started
+2270451:C 25 Feb 2025 12:43:42.037 # Configuration loaded
+2270451:M 25 Feb 2025 12:43:42.038 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270451:M 25 Feb 2025 12:43:42.038 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270585:C 25 Feb 2025 12:44:21.445 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270585:C 25 Feb 2025 12:44:21.445 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270585, just started
+2270585:C 25 Feb 2025 12:44:21.445 # Configuration loaded
+2270585:M 25 Feb 2025 12:44:21.446 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270585:M 25 Feb 2025 12:44:21.447 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270730:C 25 Feb 2025 12:44:30.287 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270730:C 25 Feb 2025 12:44:30.287 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270730, just started
+2270730:C 25 Feb 2025 12:44:30.287 # Configuration loaded
+2270730:M 25 Feb 2025 12:44:30.287 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270730:M 25 Feb 2025 12:44:30.288 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270758:C 25 Feb 2025 12:44:40.038 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270758:C 25 Feb 2025 12:44:40.038 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270758, just started
+2270758:C 25 Feb 2025 12:44:40.038 # Configuration loaded
+2270758:M 25 Feb 2025 12:44:40.039 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270758:M 25 Feb 2025 12:44:40.039 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270850:C 25 Feb 2025 12:44:50.859 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270850:C 25 Feb 2025 12:44:50.859 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270850, just started
+2270850:C 25 Feb 2025 12:44:50.859 # Configuration loaded
+2270850:M 25 Feb 2025 12:44:50.860 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270850:M 25 Feb 2025 12:44:50.860 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270903:C 25 Feb 2025 12:45:06.019 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270903:C 25 Feb 2025 12:45:06.019 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270903, just started
+2270903:C 25 Feb 2025 12:45:06.019 # Configuration loaded
+2270903:M 25 Feb 2025 12:45:06.019 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270903:M 25 Feb 2025 12:45:06.019 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2270958:C 25 Feb 2025 12:45:07.053 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2270958:C 25 Feb 2025 12:45:07.054 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2270958, just started
+2270958:C 25 Feb 2025 12:45:07.054 # Configuration loaded
+2270958:M 25 Feb 2025 12:45:07.054 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2270958:M 25 Feb 2025 12:45:07.054 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2271019:C 25 Feb 2025 12:45:10.059 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2271019:C 25 Feb 2025 12:45:10.059 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2271019, just started
+2271019:C 25 Feb 2025 12:45:10.059 # Configuration loaded
+2271019:M 25 Feb 2025 12:45:10.060 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2271019:M 25 Feb 2025 12:45:10.060 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2271086:C 25 Feb 2025 12:45:13.083 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2271086:C 25 Feb 2025 12:45:13.083 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2271086, just started
+2271086:C 25 Feb 2025 12:45:13.083 # Configuration loaded
+2271086:M 25 Feb 2025 12:45:13.084 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2271086:M 25 Feb 2025 12:45:13.084 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2271123:C 25 Feb 2025 12:45:17.862 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2271123:C 25 Feb 2025 12:45:17.862 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2271123, just started
+2271123:C 25 Feb 2025 12:45:17.862 # Configuration loaded
+2271123:M 25 Feb 2025 12:45:17.863 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2271123:M 25 Feb 2025 12:45:17.863 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2271140:C 25 Feb 2025 12:45:23.638 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2271140:C 25 Feb 2025 12:45:23.638 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2271140, just started
+2271140:C 25 Feb 2025 12:45:23.638 # Configuration loaded
+2271140:M 25 Feb 2025 12:45:23.639 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2271140:M 25 Feb 2025 12:45:23.640 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2271178:C 25 Feb 2025 12:45:30.484 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2271178:C 25 Feb 2025 12:45:30.484 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2271178, just started
+2271178:C 25 Feb 2025 12:45:30.484 # Configuration loaded
+2271178:M 25 Feb 2025 12:45:30.485 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2271178:M 25 Feb 2025 12:45:30.485 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2271188:C 25 Feb 2025 12:45:38.234 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2271188:C 25 Feb 2025 12:45:38.234 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2271188, just started
+2271188:C 25 Feb 2025 12:45:38.234 # Configuration loaded
+2271188:M 25 Feb 2025 12:45:38.235 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2271188:M 25 Feb 2025 12:45:38.236 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2271198:C 25 Feb 2025 12:45:47.015 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2271198:C 25 Feb 2025 12:45:47.015 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2271198, just started
+2271198:C 25 Feb 2025 12:45:47.015 # Configuration loaded
+2271198:M 25 Feb 2025 12:45:47.015 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2271198:M 25 Feb 2025 12:45:47.016 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2271209:C 25 Feb 2025 12:45:56.561 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2271209:C 25 Feb 2025 12:45:56.561 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2271209, just started
+2271209:C 25 Feb 2025 12:45:56.561 # Configuration loaded
+2271209:M 25 Feb 2025 12:45:56.562 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2271209:M 25 Feb 2025 12:45:56.562 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+2271219:C 25 Feb 2025 12:46:07.327 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2271219:C 25 Feb 2025 12:46:07.327 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=2271219, just started
+2271219:C 25 Feb 2025 12:46:07.327 # Configuration loaded
+2271219:M 25 Feb 2025 12:46:07.327 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+2271219:M 25 Feb 2025 12:46:07.328 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
